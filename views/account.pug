@@ -1,0 +1,11 @@
+extends layout.pug 
+
+block appContent
+  body
+    h1 Hello Megan
+    h2 You have #{money}
+    if !recentTransactions
+      p You have no recent transactions
+    else
+      p Recent transaction
+    button Logout
